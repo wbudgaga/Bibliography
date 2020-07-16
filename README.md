@@ -12,3 +12,7 @@ In this project,  I used Bean Development Kit and an existing TickTock bean to i
          year = 1993}.   
   
 and generates entries in increasing order based on any one of the following criteria:  
+
+- Last name of first author. If multiple entries are present, generate them in any order.
+- Name of the journal. If multiple entries are present, then use the order of the paper titles. If even that is the same(!), choose any order after that.
+- Date of publication, takes into account only Year and Month.
