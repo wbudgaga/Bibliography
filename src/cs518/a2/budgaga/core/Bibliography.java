@@ -209,7 +209,7 @@ public class Bibliography extends javax.swing.JPanel{
     public void setSortByJournal(boolean value){
         try{
             vcs.fireVetoableChange("sortByJournal", this, value);
-            sortByJournal = true;
+            sortByJournal           = true;
             setSort(new SorterByJournal());
         } catch (PropertyVetoException e) {}
     }
@@ -220,7 +220,7 @@ public class Bibliography extends javax.swing.JPanel{
     public void setSortByPublicationDate(boolean value){        
         try{
             vcs.fireVetoableChange("sortByPublicationDate", this, value);
-            sortByPublicationDate = true;
+            sortByPublicationDate   = true;
             setSort(new SorterByPublicationDate());
         } catch (PropertyVetoException e) {}
     }
@@ -229,7 +229,7 @@ public class Bibliography extends javax.swing.JPanel{
     }
     
     private void setSort(Sorter newSorter){
-        sorter = newSorter;
+        sorter                  = newSorter;
         sort();
     }
     
@@ -251,7 +251,7 @@ public class Bibliography extends javax.swing.JPanel{
     }
 
     private void loadFile(){
-        File file = new File(bibfileField.getText());
+        File file                   = new File(bibfileField.getText());
         try {
             textArea.read( new FileReader( file.getAbsolutePath() ), null );
             entriesContainer = new EntriesContainer(textArea.getText());
@@ -275,7 +275,7 @@ public class Bibliography extends javax.swing.JPanel{
 
     private void browseActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_browseActionPerformed
         errorMSG("");
-        int returnVal = fileChooser.showOpenDialog(this);
+        int returnVal               = fileChooser.showOpenDialog(this);
         if (returnVal == JFileChooser.APPROVE_OPTION) {
             bibfileField.setText(fileChooser.getSelectedFile().getPath());
             loadFile();
