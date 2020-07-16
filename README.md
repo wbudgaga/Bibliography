@@ -21,11 +21,11 @@ Thus, there are three properties, each related to one of the three sort criteria
   
   
 ## Contents:
-	- **BibliographyProj.tar**: The whole project that was implemented  using netbeans.
+  - **BibliographyProj.tar**: The whole project that was implemented  using netbeans.
 
-	- **srcCode.tar**: The source code of the implemented java bean. It is the src folder of the project (**src/cs518/a2/budgaga**).
+  - **srcCode.tar**: The source code of the implemented java bean. It is the src folder of the project (**src/cs518/a2/budgaga**).
 
-	- **Bibliography.jar**:  The deployable Java Bean.
+  - **Bibliography.jar**:  The deployable Java Bean.
 
-	- **testBibFile.bib**: A simple LaTeX bibfile that can be used to test the The Bibliography bean.
+  - **testBibFile.bib**: A simple LaTeX bibfile that can be used to test the The Bibliography bean.
 	
