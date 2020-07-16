@@ -29,3 +29,8 @@ Thus, there are three properties, each related to one of the three sort criteria
 
   - **testBibFile.bib**: A simple LaTeX bibfile that can be used to test the The Bibliography bean.
 	
+
+## Execution:
+You can test the Bibliography bean using BeanBox. 
+All you need to do is to add the Bean to BeanBox is to copy the deployable bean (Bibliography.jar) in the  BeanBox's subdirectory named jars. 
+The jars directory contains the JAR files for the Beans that are used by BeanBox. You can also load the bean at run-time by using the File menu and selecting LoadJar.
