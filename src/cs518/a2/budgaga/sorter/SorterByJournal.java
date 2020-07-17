@@ -1,7 +1,4 @@
-/*
- * To change this template, choose Tools | Templates
- * and open the template in the editor.
- */
+
 package cs518.a2.budgaga.sorter;
 
 import cs518.a2.budgaga.core.BibtexEntry;
