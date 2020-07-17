@@ -25,7 +25,7 @@ public abstract class Sorter {
     }
     
     public void sortByValue() {
-        currentIndex    = -1;
+        currentIndex                                = -1;
         List<Map.Entry<String, String>> list = new LinkedList<>(listToBeSorted.entrySet());
         Collections.sort(list, new Comparator<Map.Entry<String, String>>() {
             @Override
@@ -34,15 +34,15 @@ public abstract class Sorter {
             }
         });
 
-        Map<String, String> result = new LinkedHashMap<>();
+        Map<String, String> result                  = new LinkedHashMap<>();
         for (Map.Entry<String, String> entry : list) {
             result.put(entry.getKey(), entry.getValue());
         }
-        listToBeSorted = (HashMap<String, String>) result;
+        listToBeSorted                              = (HashMap<String, String>) result;
     }
     
     public String nextKey(){ 
-        int idx =-1;
+        int idx                                     = -1;
         ++currentIndex;
         for (String key:listToBeSorted.keySet()){
             if (++idx == currentIndex)
