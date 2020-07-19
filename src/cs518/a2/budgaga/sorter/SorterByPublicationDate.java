@@ -8,7 +8,6 @@ import java.util.HashMap;
  * @author budgaga
  */
 public class SorterByPublicationDate extends Sorter{
- 
     @Override
     protected String getValue(BibtexEntry entry){
         int month      = entry.getMonth(); 
