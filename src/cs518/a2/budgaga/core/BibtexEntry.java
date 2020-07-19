@@ -75,18 +75,18 @@ public class BibtexEntry {
     }
 
     public void setTitle(String title) {
-        this.title = title;
+        this.title      = title;
     }
     public String getTitle() {
         return this.title;
     }
 
     public void setVolume(String volume) {
-        this.volume = volume;
+        this.volume     = volume;
     }
 
     public void setYear(int year) {
-        this.year = year;
+        this.year       = year;
     }  
     public int getYear() {
         return this.year;
