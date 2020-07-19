@@ -10,9 +10,9 @@ public class EntriesContainer {
     private HashMap<String,BibtexEntry> entries = new HashMap<> (); //<key,BibtexEntry>
     
     public EntriesContainer(String bibtexEntries){ 
-        String[] entriesText = bibtexEntries.split("@article");
+        String[] entriesText        = bibtexEntries.split("@article");
         for(int i=1; i<entriesText.length; ++i){
-             BibtexEntry entry = new BibtexEntry(entriesText[i].replaceAll("\n", ""));
+             BibtexEntry entry      = new BibtexEntry(entriesText[i].replaceAll("\n", ""));
              if (!entries.containsKey(entry.getKey()))
                 entries.put(entry.getKey(), entry);
         }
