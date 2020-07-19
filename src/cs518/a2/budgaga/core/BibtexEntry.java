@@ -38,7 +38,7 @@ public class BibtexEntry {
     }
 
     public void setKey(String key) {
-        this.key = key;
+        this.key        = key;
     }
    
     public String getKey() {
@@ -46,7 +46,7 @@ public class BibtexEntry {
     }
 
     public void setAuthor(String author) {
-        this.author = author;
+        this.author     = author;
     }
     public String getAuthor() {
         return this.author;
