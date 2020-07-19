@@ -1,7 +1,3 @@
-/*
- * To change this template, choose Tools | Templates
- * and open the template in the editor.
- */
 package cs518.a2.budgaga.core;
 
 import java.util.HashMap;
@@ -15,7 +11,7 @@ public class EntriesContainer {
     
     public EntriesContainer(String bibtexEntries){ 
         String[] entriesText = bibtexEntries.split("@article");
-        for(int i=1;i<entriesText.length;++i){
+        for(int i=1; i<entriesText.length; ++i){
              BibtexEntry entry = new BibtexEntry(entriesText[i].replaceAll("\n", ""));
              if (!entries.containsKey(entry.getKey()))
                 entries.put(entry.getKey(), entry);
