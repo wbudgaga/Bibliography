@@ -67,11 +67,11 @@ public class BibtexEntry {
     }
 
     public void setNumber(String number) {
-        this.number = number;
+        this.number     = number;
     }
 
     public void setPages(String pages) {
-        this.pages = pages;
+        this.pages      = pages;
     }
 
     public void setTitle(String title) {
