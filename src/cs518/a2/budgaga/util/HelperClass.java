@@ -13,7 +13,7 @@ public class HelperClass {
 
    public static int getMonthPos(String monthName){
        for (int i = 0; i < 12 ; ++i)
-           if (MONTHS[i].compareToIgnoreCase(monthName)==0)
+           if (MONTHS[i].compareToIgnoreCase(monthName) == 0)
                return (i+1);
        return -1;
    }
@@ -26,12 +26,12 @@ public class HelperClass {
    }
 
    public static String removeSpecialCharacters(String src){
-       String value = src.replaceAll("[^\\dA-Za-z\\- ]", "");
+       String value                 = src.replaceAll("[^\\dA-Za-z\\- ]", "");
        return value.trim();
    }
    
    public static String getPartValue(String src,String name){
-       if (name.compareToIgnoreCase("year")==0)
+       if (name.compareToIgnoreCase("year") == 0)
           return removeSpecialCharacters(src.replaceAll("(.+?)\\s*,\\s*("+name+")\\s*=\\s*(\\d*)(?)","$3"));
        else
           return removeSpecialCharacters(src.replaceAll("(.+?)\\s*,\\s*("+name+")\\s*=\\s*(.+?),(.*)","$3"));     
