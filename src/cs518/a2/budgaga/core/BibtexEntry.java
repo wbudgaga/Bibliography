@@ -1,7 +1,3 @@
-/*
- * To change this template, choose Tools | Templates
- * and open the template in the editor.
- */
 package cs518.a2.budgaga.core;
 
 import cs518.a2.budgaga.util.HelperClass;
