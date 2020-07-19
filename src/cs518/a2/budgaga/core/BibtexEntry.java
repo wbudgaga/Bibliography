@@ -60,7 +60,7 @@ public class BibtexEntry {
     }
 
     public void setMonth(int month) {
-        this.month = month;
+        this.month      = month;
     }
     public int getMonth() {
         return this.month;
