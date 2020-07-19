@@ -53,7 +53,7 @@ public class BibtexEntry {
     }
 
     public void setJournal(String journal) {
-        this.journal = journal;
+        this.journal    = journal;
     }
     public String getJournal() {
         return this.journal;
