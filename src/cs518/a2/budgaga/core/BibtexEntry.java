@@ -122,8 +122,8 @@ public class BibtexEntry {
     @Override
     public String toString(){
        // System.out.println(getFirstAuthorLastname());
-        return "{"+key+",\n"+authorToString()+ ",\n"+titleToString()+",\n"+journalToString()+",\n"+
-                volumeToString()+",\n"+numberToString()+",\n"+
-                pagesToString()+",\n"+monthToString()+",\n"+yearToString()+"}";
+        return "{" + key + ",\n" + authorToString() + ",\n" + titleToString() + ",\n" + journalToString() + ",\n"+
+                volumeToString() + ",\n"+numberToString() + ",\n" +
+                pagesToString() + ",\n" + monthToString() + ",\n" + yearToString()+"}";
     }
  }
